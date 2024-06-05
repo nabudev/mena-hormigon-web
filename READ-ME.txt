@@ -1,0 +1,17 @@
+  =>  Original Template Name    : Solartec - Renewable Energy Website Template
+
+  =>  New Template Name    : MENA HORMIGON
+
+  =>  Template Link    : https://htmlcodex.com/renewable-energy-website-template
+
+  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Template Author  : HTML Codex
+
+  =>  Author Website   : https://htmlcodex.com
+
+## Project Modifications
+This project has been customized for MENA HORMIGON. The original template has been modified to better suit the needs of the company, including changes to the text, images, and other content elements.
+
+## License Compliance
+This project retains the original template's credit link as required by the [HTML Codex License](https://htmlcodex.com/license). For removal of the credit link, please refer to [Credit Removal License](https://htmlcodex.com/credit-removal).
