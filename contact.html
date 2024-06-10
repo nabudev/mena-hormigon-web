@@ -113,35 +113,37 @@
                     <div class="p-lg-5 ps-lg-0">
                         <h6 class="text-primary">Contacta con nosotros</h6>
                         <h1 class="mb-4">Solicite su cotización</h1>
-                        <form method="POST">
+                        <form action="https://formsubmit.co/nabudev01@gmail.com" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
                                         <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
                                         <label for="email">Tú Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
                                         <label for="subject">Asunto</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Enviar mensaje</button>
                                 </div>
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <input type="hidden" name="_captcha" value="false">
                             </div>
                         </form>
                     </div>
