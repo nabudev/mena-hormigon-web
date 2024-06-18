@@ -96,3 +96,48 @@
     
 })(jQuery);
 
+
+
+document.getElementById('miFormulario').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío predeterminado del formulario
+
+    // Captura los datos del formulario
+    const formData = new FormData(this);
+
+    // Convierte los datos del formulario a un objeto
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    // Envía los datos usando Fetch API
+    fetch('https://formsubmit.co/ajax/menamovial@hotmail.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Aquí puedes manejar la respuesta de la API como desees
+        console.log(data);
+        // Muestra un mensaje de éxito personalizado
+        alert('Mensaje enviado con éxito!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        // Muestra un mensaje de error personalizado
+        alert('Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.');
+    });
+});
+
+
+
+
