@@ -111,7 +111,7 @@ document.getElementById('miFormulario').addEventListener('submit', function(even
     });
 
     // Envía los datos usando Fetch API
-    fetch('https://formsubmit.co/ajax/menamovial@hotmail.com', {
+    fetch('https://formsubmit.co/ajax/menahormigon19@gmail.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
